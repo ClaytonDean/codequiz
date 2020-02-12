@@ -1,6 +1,3 @@
-here is the html 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +6,8 @@ here is the html
     <title>Its a Quiz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
 </head>
 <body>
     <div id="counter"> </div>
@@ -16,15 +15,14 @@ here is the html
     <div id="quiz" style="display: none;"></div>
     <div id="question"></div>
     <div id="results"></div>
-    
-    <button  id="submit">Submit Quiz</button>
     <br>
+    
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" id="my_centered_buttons" data-toggle="modal" data-target="#staticBackdrop">
     Launch Quiz
   </button>
   
-  <!-- Modal -->
+  <!-- Modal (QUESTION 1) -->
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -36,12 +34,10 @@ here is the html
         </div>
         <div class="modal-body">
         
-            <form action="" method="post">
-
-
-              <input type="radio" name="q1" id="q1" value="1">right answer</input>
-              <input type="radio" name="q1" id="q1" value="0">wrong answer</input>
-              <input type="radio" name="q1" id="q1" value="0">wrong answer</input>
+            <form action="" method="post" class="q1" id="q1">
+              <input type="radio" name="q1" value="1">right answer</input>
+              <input type="radio" name="q1"  value="0">wrong answer</input>
+              <input type="radio" name="q1"  value="0">wrong answer</input>
               
             </form>
 
@@ -49,82 +45,84 @@ here is the html
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button"class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#staticBackdrop2">Next Question</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#staticBackdrop2">Next Question</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+<!-- Button trigger modal 2-->
+<button type="button" class="btn btn-primary display" data-toggle="modal" data-target="#staticBackdrop2">
+    Launch Quiz2
+  </button>
+  
+  <!-- Modal (QUESTION 2) -->
+  <div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Question #2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+            <form action="" method="post" class="q2" id="q2">
+              <input type="radio" name="q2" value="1">right answer</input>
+              <input type="radio" name="q2"  value="0">wrong answer</input>
+              <input type="radio" name="q2"  value="0">wrong answer</input>
+
+			</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#staticBackdrop3">Next Question</button>
         </div>
       </div>
     </div>
   </div>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Question #2</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-          <form action="" method="post">
 
 
-            <input type="radio" name="q1" id="q1" value="1">right answer</input>
-            <input type="radio" name="q1" id="q1" value="0">wrong answer</input>
-            <input type="radio" name="q1" id="q1" value="0">wrong answer</input>
-            
-          </form>
 
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button"class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#staticBackdrop3">Next Question</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Question #3</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      
-          <form action="" method="post">
-
-
-            <input type="radio" name="q1" id="q1" value="1">right answer</input>
-            <input type="radio" name="q1" id="q1" value="0">wrong answer</input>
-            <input type="radio" name="q1" id="q1" value="0">wrong answer</input>
-            
-          </form>
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    
-    <br>
-
-    
-
-        <!-- <button type="button"class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#staticBackdrop2">Next Question</button> -->
-      </div>
-    </div>
-  </div>
+<!-- Button trigger modal 3-->
+<button type="button" class="btn btn-primary display" data-toggle="modal" data-target="#staticBackdrop3">
+    Launch Quiz3
+  </button>
   
-</div>
+  <!-- Modal  (QUESTION 3) -->
+  <div class="modal fade" id="staticBackdrop3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Question #3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+            <form action="" method="post" class="q3" id="q3">
+              <input type="radio" name="q3" value="1">right answer</input>
+              <input type="radio" name="q3"  value="0">wrong answer</input>
+              <input type="radio" name="q3"  value="0">wrong answer</input>
+              
+            </form>
 
-
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="submit" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
 
 
 
